@@ -1,9 +1,9 @@
-export const google_client_id = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
-export const google_client_secret = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET; // kalau ada
+export const google_client_id =
+  "174066720496-rbrh3b8632juu324iug9qk0h24ik25a4.apps.googleusercontent.com";
+
+export const fb_app_id = "ISI_FB_APP_ID_JIKA_ADA"; // Kosongkan jika tidak pakai login Facebook
 
 export const appleLoginCredential = {
-  clientId: 'your-apple-client-id',
-  redirectUri: 'your-redirect-uri'
+  serviceId: "com.sorbannaga.web", // Contoh, sesuaikan dengan Apple Developer
+  redirectURI: "https://sorbannaga.com/auth/apple/callback", // Ganti sesuai routing yang kamu pakai
 };
-
-export const fb_app_id = 'your-facebook-app-id';
