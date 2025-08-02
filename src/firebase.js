@@ -7,13 +7,14 @@ import {
 } from "firebase/messaging";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyA3P17vMsbFT42cnhS-UWNLFtbj5P7Pwj8",
+  authDomain: "sorbannagacom.firebaseapp.com",
+  databaseURL: "https://sorbannagacom-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "sorbannagacom",
+  storageBucket: "sorbannagacom.firebasestorage.app",
+  messagingSenderId: "174066720496",
+  appId: "1:174066720496:web:d1cba570b05604f4d0ec35",
+  measurementId: "G-09SGN4L4J0"
 };
 const firebaseApp = !getApps().length
   ? initializeApp(firebaseConfig)
@@ -32,7 +33,8 @@ const messaging = (async () => {
 
 export const fetchToken = async (setTokenFound, setFcmToken) => {
   return getToken(await messaging, {
-    vapidKey: process.env.NEXT_PUBLIC_FIREBASE_VAPID_KEY,
+    vapidKey:
+      "BCSUvH4iS4lLqsSlnLGorXGjCEJKevn5cFk-gipbzawP02UhIX_4dXjFCBCV9MGEaAWjlrOUbGBs_Vhcxx5nPaE",
   })
     .then((currentToken) => {
       if (currentToken) {

@@ -4,6 +4,7 @@ importScripts("https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js")
 firebase.initializeApp({
   apiKey: "AIzaSyA3P17vMsbFT42cnhS-UWNLFtbj5P7Pwj8",
   authDomain: "sorbannagacom.firebaseapp.com",
+  databaseURL: "https://sorbannagacom-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "sorbannagacom",
   storageBucket: "sorbannagacom.firebasestorage.app",
   messagingSenderId: "174066720496",
