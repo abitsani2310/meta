@@ -13,8 +13,8 @@ const firebaseConfig = {
   projectId: "sorbannagacom",
   storageBucket: "sorbannagacom.firebasestorage.app",
   messagingSenderId: "174066720496",
-  appId: "1:174066720496:web:d1cba570b05604f4d0ec35",
-  measurementId: "G-09SGN4L4J0"
+  appId: "1:174066720496:web:daa13a398a7626c1d0ec35",
+  measurementId: "G-F281QXMT7T"
 };
 const firebaseApp = !getApps().length
   ? initializeApp(firebaseConfig)
